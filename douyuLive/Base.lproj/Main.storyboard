@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mep-jd-xdS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="斗鱼直播" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dps-BZ-Ziy">
+                                <rect key="frame" x="322" y="102" width="62" height="30"/>
+                                <state key="normal" title="切换镜头"/>
+                                <connections>
+                                    <action selector="changeVidoe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y9k-3H-9pl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8s-gz-cD2">
+                                <rect key="frame" x="313" y="798" width="62" height="30"/>
+                                <state key="normal" title="开始采集"/>
+                                <connections>
+                                    <action selector="saveData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7D0-im-WCP"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1g-ZU-VLE">
+                                <rect key="frame" x="322" y="142" width="62" height="30"/>
+                                <state key="normal" title="停止采集"/>
+                                <connections>
+                                    <action selector="stopSession:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rkw-US-Sei"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U8s-gz-cD2" secondAttribute="bottom" constant="34" id="2jf-8Q-UFG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L1g-ZU-VLE" secondAttribute="trailing" constant="30" id="6XT-Ci-kzc"/>
+                            <constraint firstItem="L1g-ZU-VLE" firstAttribute="top" secondItem="Dps-BZ-Ziy" secondAttribute="bottom" constant="10" id="ffi-VV-4iz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dps-BZ-Ziy" secondAttribute="trailing" constant="30" id="jbq-K3-atN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U8s-gz-cD2" secondAttribute="trailing" constant="39" id="mN4-mf-Zgk"/>
+                            <constraint firstItem="Dps-BZ-Ziy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="nkU-Dd-K7Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="126"/>
+        </scene>
+        <!--Real Time Filters View Controller-->
+        <scene sceneID="NCN-P0-fCM">
+            <objects>
+                <viewController id="yRi-Dk-c06" customClass="RealTimeFiltersViewController" customModule="斗鱼直播" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yMI-zj-xVh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xKH-Vl-KhS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nzI-iG-pTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="126"/>
+        </scene>
+        <!--Beauty Camera View Controller-->
+        <scene sceneID="xjc-bF-Slp">
+            <objects>
+                <viewController id="Mep-jd-xdS" customClass="BeautyCameraViewController" customModule="斗鱼直播" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TLh-5i-xrl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oa5-5t-Ych">
+                                <rect key="frame" x="30" y="212" width="354" height="472"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oa5-5t-Ych" secondAttribute="height" multiplier="3:4" id="nOB-H4-A5E"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iI-qb-WTL">
+                                <rect key="frame" x="182" y="807" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PTB-RP-DVZ"/>
+                                    <constraint firstAttribute="width" constant="50" id="mc2-8t-abl"/>
+                                </constraints>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="takePhoto" destination="Mep-jd-xdS" eventType="touchUpInside" id="eDX-ae-9Wp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dBK-TW-2hF" firstAttribute="bottom" secondItem="7iI-qb-WTL" secondAttribute="bottom" constant="5" id="bty-nl-RPq"/>
+                            <constraint firstItem="7iI-qb-WTL" firstAttribute="centerX" secondItem="TLh-5i-xrl" secondAttribute="centerX" id="fPc-Yd-DEx"/>
+                            <constraint firstItem="oa5-5t-Ych" firstAttribute="leading" secondItem="dBK-TW-2hF" secondAttribute="leading" constant="30" id="o7W-Lx-o9b"/>
+                            <constraint firstItem="oa5-5t-Ych" firstAttribute="centerY" secondItem="TLh-5i-xrl" secondAttribute="centerY" id="pYm-Cj-Nhj"/>
+                            <constraint firstItem="oa5-5t-Ych" firstAttribute="centerX" secondItem="TLh-5i-xrl" secondAttribute="centerX" id="ytH-Ci-YG2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dBK-TW-2hF"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="oa5-5t-Ych" id="BJS-on-tCl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3CV-oL-Fy1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1671" y="126"/>
+        </scene>
+    </scenes>
+</document>
